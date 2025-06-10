@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>منصة بث فيديو احترافية</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      direction: rtl;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #007acc;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    ul, table {
+      margin: 20px 0;
+    }
+    ul li {
+      margin: 8px 0;
+    }
+    a.button {
+      display: block;
+      width: fit-content;
+      margin: 15px auto;
+      background: #007acc;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    a.button:hover {
+      background: #005f99;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 240px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      text-align: right;
+    }
+    th {
+      background: #007acc;
+      color: #fff;
+    }
+    .section-title {
+      margin-top: 40px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 منصة بث فيديو احترافية</h1>
+    <p>
+      تم بناء مشروع <strong>Video Streaming Portal</strong> باستخدام Laravel كنظام متكامل لبث الفيديوهات (أفلام، مسلسلات، رياضة، بث مباشر).
+      يتضمن لوحة تحكم مرنة ويدعم الاستيراد من IMDb، وتكامل مع بوابات الدفع، ومشغلات الفيديو المتقدمة.
+    </p>
+
+    <a class="button" href="https://videoportal.viavilab.com/" target="_blank">🔗 عرض المعاينة (Demo)</a>
+
+    <h2 class="section-title">🛠️ المتطلبات التقنية</h2>
+    <table>
+      <tr><th>العنصر</th><th>الوصف</th></tr>
+      <tr><td>إصدار PHP</td><td>>= 8.2</td></tr>
+      <tr><td>ملحقات PHP</td>
+        <td>
+          Ctype, cURL, DOM, Fileinfo, Filter, Hash, Mbstring, OpenSSL, PCRE, PDO, Session, Tokenizer, XML, Intl, GD أو Imagick, Zip
+        </td>
+      </tr>
+      <tr><td>الخادم</td><td>Apache / Nginx مع تفعيل وحدة إعادة الكتابة (mod_rewrite)</td></tr>
+      <tr><td>حماية الفيديو</td><td>HLS، Token-based streaming، DRM</td></tr>
+    </table>
+
+    <h2 class="section-title">✨ أهم الميزات</h2>
+    <ul>
+      <li>🎨 تصميم متجاوب (Responsive) مع 6 سكيمات لونية</li>
+      <li>⚙️ لوحة تحكم للإدارة المتقدمة (أفلام، عروض، رياضة، بث مباشر)</li>
+      <li>🗂️ استيراد تلقائي من TMDb و OMDb (IMDb)</li>
+      <li>💰 دعم بوابات الدفع العالمية والمحلية (PayPal, Stripe, Razorpay, Paytm...)</li>
+      <li>🧾 إدارة الاشتراكات، القسائم، الحد من الأجهزة، صلاحيات المشرفين الفرعيين</li>
+      <li>📺 دعم صيغ فيديو متعددة: MP4، M3U8، DASH، YouTube، Vimeo، مع دعم Chromecast</li>
+      <li>🧠 بحث ذكي باستخدام ElasticSearch + تصنيفات حسب اللغة والنوع</li>
+      <li>🔐 حماية ضد SQL Injection + دعم HTTPS + تكامل GDPR</li>
+      <li>🌐 دعم الصفحات الثابتة (نبذة عنا، سياسة الخصوصية...)</li>
+      <li>🧩 إعدادات الموقع (اسم، شعار، توقيت، العملة، البريد...)</li>
+    </ul>
+
+    <h2 class="section-title">🖼️ معرض صور المشروع</h2>
+    <div class="gallery">
+      <img src="images/vod-1.jpg" alt="لوحة تحكم المشرف">
+      <img src="images/vod-2.jpg" alt="واجهة المستخدم">
+      <img src="images/vod-3.jpg" alt="تعديل بيانات فيلم">
+      <img src="images/vod-4.jpg" alt="بث مباشر">
+    </div>
+
+    <a class="button" href="index.html">⬅ العودة إلى المحفظة</a>
+  </div>
+</body>
+</html>
