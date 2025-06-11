@@ -42,18 +42,42 @@
     a.button:hover {
       background: #005f99;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 240px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+  direction: rtl;
+}
+
+.gallery-item {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -96,10 +120,22 @@
   <li>أمان عالي مع دعم HTTPS وتكامل مع متطلبات GDPR</li>
 </ul>
 
+    <!-- <h2 class="section-title">🛠️ المتطلبات التقنية</h2>
+    <table>
+      <tr><th>العنصر</th><th>الوصف</th></tr>
+      <tr><td>إصدار PHP</td><td>>= 8.2</td></tr>
+      <tr><td>ملحقات PHP</td>
+        <td>
+          Ctype, cURL, DOM, Fileinfo, Filter, Hash, Mbstring, OpenSSL, PCRE, PDO, Session, Tokenizer, XML, Intl, GD أو Imagick, Zip
+        </td>
+      </tr>
+      <tr><td>الخادم</td><td>Apache / Nginx مع تفعيل وحدة إعادة الكتابة (mod_rewrite)</td></tr>
+      <tr><td>حماية الفيديو</td><td>HLS، Token-based streaming، DRM</td></tr>
+    </table> -->
 
     <h2 class="section-title">✨ أهم الميزات</h2>
     <ul>
-      <li>🎨 تصميم متجاوب (Responsive) مع 6 ثيمات لونية</li>
+      <li>🎨 تصميم متجاوب (Responsive) مع 6 سكيمات لونية</li>
       <li>⚙️ لوحة تحكم للإدارة المتقدمة (أفلام، عروض، رياضة، بث مباشر)</li>
       <li>🗂️ استيراد تلقائي من TMDb و OMDb (IMDb)</li>
       <li>💰 دعم بوابات الدفع العالمية والمحلية (PayPal, Stripe, Razorpay, Paytm...)</li>
@@ -112,12 +148,69 @@
     </ul>
 
     <h2 class="section-title">🖼️ معرض صور المشروع</h2>
-    <div class="gallery">
-      <img src="images/vod-1.jpg" alt="لوحة تحكم المشرف">
-      <img src="images/vod-2.jpg" alt="واجهة المستخدم">
-      <img src="images/vod-3.jpg" alt="تعديل بيانات فيلم">
-      <img src="images/vod-4.jpg" alt="بث مباشر">
-    </div>
+    <!-- <div class="gallery">
+      <img src="images/vod-dashboard.png" alt="لوحة تحكم المشرف">
+      <img src="images/vod-1.png" alt="الواجهة الرئيسية">
+            <img src="images/vod-2.png" alt="واجهة الافلام">
+            <img src="images/vod-3.png" alt="تفاصيل الافلام">
+            <img src="images/vod-4.png" alt="واجهة المسلسلات ">
+                        <img src="images/vod-5.png" alt="تفاصيل المسلسلات ">
+
+            <img src="images/vod-6.png" alt="واجهة الرياضة">
+                                    <img src="images/vod-7.png" alt="تفاصيل الرياضة ">
+                                    
+
+            <img src="images/vod-4.png" alt="واجهة البرامج التلفزيونية">
+
+      <img src="images/vod-8.png" alt="اضافة الافلام">
+      <img src="images/vod-live-tv.png" alt="بث مباشر">
+    </div> -->
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="images/vod-dashboard.png" alt="لوحة تحكم المشرف">
+    <p>لوحة تحكم المشرف</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-1.png" alt="الواجهة الرئيسية">
+    <p>الواجهة الرئيسية</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-2.png" alt="واجهة الافلام">
+    <p>واجهة الأفلام</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-3.png" alt="تفاصيل الافلام">
+    <p>تفاصيل الأفلام</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-4.png" alt="واجهة المسلسلات">
+    <p>واجهة المسلسلات</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-5.png" alt="تفاصيل المسلسلات">
+    <p>تفاصيل المسلسلات</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-6.png" alt="واجهة الرياضة">
+    <p>واجهة الرياضة</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-7.png" alt="تفاصيل الرياضة">
+    <p>تفاصيل الرياضة</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-4.png" alt="واجهة البرامج التلفزيونية">
+    <p>واجهة البرامج التلفزيونية</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-8.png" alt="إضافة الأفلام">
+    <p>إضافة الأفلام</p>
+  </div>
+  <div class="gallery-item">
+    <img src="images/vod-live-tv.png" alt="بث مباشر">
+    <p>بث مباشر</p>
+  </div>
+</div>
 
     <a class="button" href="index.html">⬅ العودة إلى المحفظة</a>
   </div>
