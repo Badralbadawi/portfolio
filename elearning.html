@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام التدريب والتعليم المستمر</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      direction: rtl;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #0b75c9;
+    }
+    ul {
+      margin: 20px 0;
+      padding-right: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background: #0b75c9;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .gallery-item {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
+    }
+     .section-title {
+      margin-top: 40px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> نظام التدريب والتعليم المستمر</h1>
+    <p>
+      منصة تعليمية مرنة وتفاعلية، طُوّرت باستخدام Laravel، تتيح تقديم محتوى متنوع يشمل فيديوهات، دورات مباشرة، مقالات، واختبارات، وتوفر أدوات قوية للتتبع والتقييم.
+    </p>
+
+   <h2 class="section-title"> التقنيات المستخدمة</h2>
+    <ul>
+      <li>Laravel 9 + PHP 8.1</li>
+      <li>قاعدة بيانات MySQL / PostgreSQL</li>
+      <li>واجهة تفاعلية باستخدام Blade + Bootstrap</li>
+      <li>دعم التكامل مع Zoom / BigBlueButton للفصول المباشرة</li>
+      <li>نظام تقييم متكامل مع تقارير وتحليلات</li>
+    </ul>
+
+  <h2 class="section-title"> الميزات الأساسية</h2>
+    <ul>
+      <li>إدارة غير محدودة للدورات التعليمية والفصول المباشرة</li>
+      <li>دعم رفع فيديوهات + تحميل ملفات تعليمية متعددة</li>
+      <li>نظام اختبارات متقدم مع الأسئلة التفاعلية</li>
+      <li>نظام تتبع التقدم ونقاط ومهام لكل متعلم</li>
+      <li>بيئة تعليمية متعددة المستخدمين (مدربين، متعلمين، مشرفين)</li>
+    </ul>
+
+   <h2 class="section-title"> للمُدرّبين</h2>
+    <ul>
+      <li>رفع محتوى مرئي، مقاطع فيديو، ملفات PDF / PPT / DOC</li>
+      <li>إنشاء اختبارات تفاعلية ومهام</li>
+      <li>إدارة الحضور والتفاعل مع المتدربين</li>
+    </ul>
+
+   <h2 class="section-title"> للمتعلمين</h2>
+    <ul>
+      <li>الوصول السهل للدروس المباشرة والمسجلة</li>
+      <li>المشاركة في المشاريع التفاعلية</li>
+      <li>الاطلاع على التقارير والتقدم الدراسي</li>
+    </ul>
+
+   <h2 class="section-title"> معرض صور المشروع</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/elearning-1.jpg" alt="لوحة تحكم الدورة">
+        <p>لوحة تحكم الدورة</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/elearning-2.jpg" alt="واجهة الطالب">
+        <p>واجهة الطالب</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/elearning-3.jpg" alt="نظام الاختبارات">
+        <p>نظام الاختبارات</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/elearning-4.jpg" alt="الفصول المباشرة">
+        <p>الفصول المباشرة</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="button">⬅ العودة إلى المحفظة</a>
+  </div>
+</body>
+</html>
