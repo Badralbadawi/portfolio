@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام التشخيص الذكي</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      direction: rtl;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #0b75c9;
+    }
+    ul {
+      margin: 20px 0;
+      padding-right: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background: #0b75c9;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .gallery-item {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
+    }
+    .section-title {
+      margin-top: 40px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>نظام التشخيص الذكي لاعتلال الشبكية</h1>
+    <p>
+      نظام طبي متقدم يعتمد على الذكاء الاصطناعي لتشخيص اعتلال الشبكية السكري من خلال تحليل صور الشبكية بدقة عالية، دون الحاجة للفحوصات التقليدية.
+    </p>
+
+    <h2 class="section-title"> التقنيات المستخدمة</h2>
+    <ul>
+      <li>Python + TensorFlow (التعلم العميق)</li>
+      <li>Django كنظام إدارة خلفي</li>
+      <li>قاعدة بيانات PostgreSQL</li>
+      <li>واجهة تفاعلية باستخدام JavaScript وBootstrap</li>
+      <li>تقارير PDF + رمز QR خاص لكل مريض</li>
+    </ul>
+
+    <h2 class="section-title"> النتائج الأساسية</h2>
+    <ul>
+      <li>تشخيص آلي بنسبة دقة تفوق 94%</li>
+      <li>إلغاء الحاجة لاستخدام القطرات والفلورسين</li>
+      <li>تخفيف الزحام في المستشفيات وسرعة التشخيص</li>
+      <li>سجل خاص لكل مريض بإشراف الطبيب</li>
+      <li>تقرير رقمي PDF متاح من أي مكان</li>
+    </ul>
+
+    <h2 class="section-title"> الفوائد للمستشفيات</h2>
+    <ul>
+      <li>تخفيف العبء التشخيصي وزيادة الإنتاجية</li>
+      <li>زيادة الدقة والاعتماد على التقنية</li>
+      <li>تقليل الكُلفة وزيادة كفاءة الطاقم الطبي</li>
+    </ul>
+
+    <h2 class="section-title"> الفوائد للمرضى</h2>
+    <ul>
+      <li>تشخيص سريع ودقيق</li>
+      <li>تقليل الجهد والتكلفة</li>
+      <li>سهولة الوصول إلى التقرير في أي وقت</li>
+    </ul>
+
+    <h2 class="section-title"> معرض صور المشروع</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/smart2.jpg" alt="الرئيسية">
+        <p>الرئيسية</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/smart6.jpg" alt="التصنيفات">
+        <p>التصنيفات</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/smart1.jpg" alt="واجهة التشغيل">
+        <p>واجهة التشغيل</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/smart3.jpg" alt="تقرير المريض">
+        <p>تقرير المريض</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/smart.png" alt="تحليل النموذج">
+        <p>تحليل النموذج</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="button">⬅ العودة إلى المحفظة</a>
+  </div>
+</body>
+</html>
