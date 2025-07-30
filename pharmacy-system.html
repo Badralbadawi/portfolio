@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام إدارة الصيدليات والمتاجر الطبية</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      direction: rtl;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      color: #0b75c9;
+    }
+    p {
+      text-align: center;
+      color: #333;
+      margin-top: 10px;
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #0b75c9;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      margin: 10px 0 30px 0;
+      padding-right: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 12px 25px;
+      background: #0b75c9;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+      direction: rtl;
+    }
+    .gallery-item {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>نظام إدارة الصيدليات والمتاجر الطبية</h1>
+    <p>
+      منصة SaaS سحابية متكاملة لإدارة كافة العمليات التشغيلية للصيدليات والمتاجر الطبية، تشمل المبيعات، المخزون، العملاء، الاشتراكات، تقارير الأرباح، مع دعم متعدد اللغات وطابعات Bluetooth.
+    </p>
+
+    <h2>التقنيات المستخدمة</h2>
+    <ul>
+      <li>Laravel + Vue.js</li>
+      <li>MySQL + Firebase</li>
+      <li>Bootstrap واجهة إدارة</li>
+      <li>RESTful APIs + JWT</li>
+      <li>سيرفرات SaaS سحابية قابلة للتوسع</li>
+    </ul>
+
+    <h2>أقسام النظام</h2>
+    <ul>
+      <li>لوحة تحكم ذكية وتحليلات أداء</li>
+      <li>إدارة الفروع والموظفين والصلاحيات</li>
+      <li>نظام نقاط البيع POS</li>
+      <li>إدارة العملاء وسجل المشتريات</li>
+      <li>كتالوج المنتجات والموردين والمخزون</li>
+      <li>تقارير مالية وتنبؤات مبيعات</li>
+      <li>إشعارات وتنبيهات آنية</li>
+      <li>إدارة الاشتراكات ونماذج الدفع</li>
+    </ul>
+
+    <h2>الميزات الرئيسية</h2>
+    <ul>
+      <li>نظام سحابي مرن متعدد المستخدمين</li>
+      <li>تكامل مع بوابات الدفع الإلكترونية</li>
+      <li>إشعارات فورية عبر البريد وWhatsApp</li>
+      <li>دعم طابعات POS Bluetooth</li>
+      <li>واجهة استخدام متعددة اللغات والعملات</li>
+      <li>تحليلات أرباح وتوقعات المخزون</li>
+    </ul>
+
+    <h2>معرض صور المشروع</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/pharma1.png" alt="لوحة تحكم مدير مدير النظام ">
+        <p>لوحة تحكم مدير مدير النظام</p>
+      </div>
+        <div class="gallery-item">
+        <img src="images/pharma4.png" alt=" لوحة تحكم مدير الصيدلية">
+        <p>لوحة تحكم مدير الصيدلية</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/pharma7.png" alt="نقاط البيع">
+        <p>نظام POS</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/pharma5.png" alt="إدارة المنتجات">
+        <p>إدارة المنتجات</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/pharma6.png" alt="تقارير مالية">
+        <p>التقارير والتحليلات</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/pharma3.png" alt="إدارة خطط الاشتراكات">
+        <p>إدارة خطط الاشتراكات</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="button">⬅ العودة إلى المحفظة</a>
+  </div>
+</body>
+</html>
